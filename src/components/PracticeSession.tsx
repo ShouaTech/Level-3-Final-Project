@@ -1,4 +1,4 @@
-export function PracticeSession() {
+export function PracticeSessionPage() {
     return(
         <>
         <p>Practice Session</p>

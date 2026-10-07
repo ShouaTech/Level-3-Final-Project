@@ -11,7 +11,7 @@ import { Settings } from "./components/Settings/Settings.tsx";
 import { PageNotFound } from "./components/PageNotFound.tsx";
 import { Onboarding } from "./components/Onboarding.tsx";
 import { Results } from "./components/Results.tsx";
-import { PracticeSession } from "./components/PracticeSession.tsx";
+import { PracticeSessionPage } from "./components/PracticeSession.tsx";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="/session-history" element={<SessionHistory />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/results/:sessionId" element={<Results />} />
-          <Route path="/practice-session/:exerciseId" element={<PracticeSession />} />
+          <Route path="/practice-session/:exerciseId" element={<PracticeSessionPage />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

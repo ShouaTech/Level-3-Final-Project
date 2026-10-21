@@ -1,81 +1,34 @@
-import { StepsCard } from "./StepsCard";
+import { Link } from "react-router";
+import { Button } from "@/components/ui/button";
+import { StartPracticingButton } from "./StartPracticingButton";
 
 export function HeroSection() {
   return (
-    <>
-      <div className="flex justify-between">
-        <h2>CommLab</h2>
-        <button>Log in</button>
-        <button>Get Started</button>
-      </div>
-
-      <p>AI-Powered Communication Coach</p>
-      <h1>Speak with clarity.</h1>
-      <h1>Lead every room.</h1>
-
-      <p>
-        Eloquent analyzes your speech in real time — giving you precise,
-        actionable feedback on pace, clarity, filler words, and structure.
-        Practice daily. Improve measurably.
+    <section className="pt-16 pb-24 md:pt-24">
+      <p className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-xs font-medium text-violet-300">
+        <span className="size-1.5 rounded-full bg-violet-400" />
+        AI-Powered Communication Coach
       </p>
 
-      <button>Start Practicing</button>
+      <h1 className="mt-8 font-display text-5xl leading-[0.95] tracking-tight sm:text-6xl md:text-7xl">
+        Speak with clarity.
+        <span className="block bg-linear-to-r from-violet-300 to-violet-500 bg-clip-text pb-2 text-transparent">
+          Lead every room.
+        </span>
+      </h1>
 
-      <p>HOW IT WORKS</p>
-      <h2>Four steps to a stronger voice</h2>
+      <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+        CommLab analyzes your speech and gives you precise, actionable feedback
+        on pace, clarity, filler words, and structure. Practice daily. Improve
+        measurably.
+      </p>
 
-      <div className="flex">
-        <div className="border rounded-2xl bg">
-          <StepsCard
-            step="01"
-            title="Choose a skill"
-            description="Select from targeted drills: clarity, pace, storytelling, filler words, and more."
-          />
-        </div>
-
-        <div className="border rounded-2xl bg">
-          <StepsCard
-            step="02"
-            title="Record yourself"
-            description="Practice in the browser. Record a response, presentation, or spontaneous answer."
-          />
-        </div>
-
-        <div className="border rounded-2xl bg">
-          <StepsCard
-            step="03"
-            title="Receive AI feedback"
-            description="Get instant, specific feedback - scored and explained, not just flagged."
-          />
-        </div>
-
-        <div className="border rounded-2xl bg">
-          <StepsCard
-            step="04"
-            title="Track improvement"
-            description="Watch your skill scores rise over sessions with granular progress analytics."
-          />
-        </div>
+      <div className="mt-10 flex flex-wrap items-center gap-4">
+        <StartPracticingButton />
+        <Button asChild variant="outline" className="h-12 rounded-xl px-6 text-base">
+          <Link to="/log-in">Log In</Link>
+        </Button>
       </div>
-
-      <h6>THE PRACTICE EXPERIENCE</h6>
-      <h1>Built for serious improvement</h1>
-      <p>A clean, focused environment that keeps you on track.</p>
-      {/* screenshot image of Dashboard */}
-      <img></img>
-
-      <div>
-        <h1>Your voice is worth developing.</h1>
-        <p>
-          Start free. No credit card required. See progress in the first
-          session.
-        </p>
-        <button>Start Practicing</button>
-
-        <hr />
-
-        <h6>CommLab</h6>
-      </div>
-    </>
+    </section>
   );
 }

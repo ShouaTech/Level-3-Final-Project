@@ -14,8 +14,10 @@ export function Navbar() {
         <NavLink
           key={link.path}
           to={link.path}
-          className={({isActive}) => isActive ? "font-bold shadow-md" : ""}
-        >{link.label}</NavLink>
+          className={({ isActive }) => (isActive ? "font-bold shadow-md" : "")}
+        >
+          {link.label}
+        </NavLink>
       ))}
     </>
   );

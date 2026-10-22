@@ -11,7 +11,7 @@ export function LandingPage() {
       {/* soft purple glow behind the hero */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-48 right-[-15%] size-[720px] rounded-full bg-primary/20 blur-[160px]"
+        className="pointer-events-none absolute -top-48 right-[-15%] size-180 rounded-full bg-primary/20 blur-[160px]"
       />
 
       <div className="relative mx-auto max-w-6xl px-6">

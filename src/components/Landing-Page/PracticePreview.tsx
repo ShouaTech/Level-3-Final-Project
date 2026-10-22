@@ -20,7 +20,7 @@ export function PracticePreview() {
   return (
     <section className="py-20">
       <SectionHeading
-        eyebrow="The practice experience"
+        label="The practice experience"
         title="Built for serious improvement"
         subtitle="A clean, focused environment that keeps you on track."
       />

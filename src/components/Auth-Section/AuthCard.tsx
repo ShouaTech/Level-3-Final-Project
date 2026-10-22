@@ -1,16 +1,17 @@
+import type { ReactNode } from "react";
 import { AuthToggle } from "./AuthToggle";
 
-export function AuthCard() {
+// The card on the Log In and Sign Up pages: the toggle at the top, then
+// whatever form the page passes in as children.
+type AuthCardType = {
+  children: ReactNode;
+};
+
+export function AuthCard(props: AuthCardType) {
   return (
-    <div className="border rounded-3xl padding">
+    <div className="rounded-3xl border bg-card/80 p-8 shadow-2xl shadow-black/40">
       <AuthToggle />
-
-      <label>Email address</label>
-      <input type="email" className="h-12 w-full rounded-xl border border-input bg-muted/40 px-4 text-base placeholder:text-muted-foreground outline-none transition-colors focus:border-primary/60 focus:ring-2 focus:ring-primary/30" placeholder="you@example.com"/>
-      <label>Password</label>
-      <input type="password" className="h-12 w-full rounded-xl border border-input bg-muted/40 px-4 text-base placeholder:text-muted-foreground outline-none transition-colors focus:border-primary/60 focus:ring-2 focus:ring-primary/30" placeholder="********"/>
-
-      <button className="border px-15 py-5 rounded-2xl m-5">Log In</button>
+      <div className="mt-8">{props.children}</div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ const steps = [
 export function HowItWorks() {
   return (
     <section className="py-20">
-      <SectionHeading eyebrow="How it works" title="Four steps to a stronger voice" />
+      <SectionHeading label="How it works" title="Four steps to a stronger voice" />
 
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (

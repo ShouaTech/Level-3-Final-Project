@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router";
 import { NavLayout } from "./components/NavLayout.tsx";
+import { AuthLayout } from "./components/AuthLayout.tsx";
 
 import { LandingPage } from "./components/Landing-Page/LandingPage";
 import { SignUp } from "./components/Auth-Section/SignUp.tsx";
@@ -18,8 +19,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/log-in" element={<LogIn />} />
+        <Route element={<AuthLayout />}>
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/log-in" element={<LogIn />} />
+        </Route>
         <Route path="/onboarding" element={<Onboarding />} />
 
         <Route element={<NavLayout />}>

@@ -25,7 +25,7 @@ export type PracticeSession = {
 export type UserPerformance = {
     strengths: string[],
     weaknesses: string[],
-    recommendedPractice: string,
+    recommendedPractice: string
 }
 
 export type Exercise = {
@@ -34,5 +34,5 @@ export type Exercise = {
     description: string,
     duration: string,
     difficulty: string,
-    prompt: string,
+    prompt: string
 }

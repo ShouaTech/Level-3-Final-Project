@@ -1,9 +1,10 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { Button } from "@/components/ui/button";
 import { FormField } from "../FormField";
 import { AuthCard } from "./AuthCard";
 
 export function LogIn() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="mb-8 text-center">
@@ -16,7 +17,10 @@ export function LogIn() {
       </div>
 
       <AuthCard>
-        <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+        <form className="space-y-5" onSubmit={(e) => {
+          e.preventDefault();
+          navigate("/onboarding");
+        }}>
           <FormField
             id="email"
             label="Email address"
@@ -31,12 +35,14 @@ export function LogIn() {
             placeholder="••••••••"
             autoComplete="current-password"
           />
+
           <Button
             type="submit"
             className="mt-3 h-12 w-full rounded-xl text-base shadow-lg shadow-primary/30"
           >
             Log In
           </Button>
+
         </form>
       </AuthCard>
 

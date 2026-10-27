@@ -1,7 +1,6 @@
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// A selectable option: click to turn it on or off.
 type OptionChipType = {
   label: string;
   selected: boolean;

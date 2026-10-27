@@ -8,7 +8,6 @@ export function LandingHeader() {
       <Logo />
 
       <nav className="flex items-center gap-3">
-        {/* hidden on phones to make room; the hero has its own Log In button */}
         <Button
           asChild
           variant="outline"

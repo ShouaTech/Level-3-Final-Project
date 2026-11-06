@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router";
 import { Button } from "@/components/ui/button";
-import { FormField } from "../FormField";
-import { AuthCard } from "./AuthCard";
+import { FormField } from "../components/FormField";
+import { AuthCard } from "../components/auth/AuthCard";
 
 export function LogIn() {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ export function LogIn() {
       <AuthCard>
         <form className="space-y-5" onSubmit={(e) => {
           e.preventDefault();
-          navigate("/onboarding");
+          navigate("/dashboard");
         }}>
           <FormField
             id="email"

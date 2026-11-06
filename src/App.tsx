@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router";
-import { NavLayout } from "./components/NavLayout.tsx";
-import { AuthLayout } from "./components/AuthLayout.tsx";
+import { NavLayout } from "./components/layout/NavLayout.tsx";
+import { AuthLayout } from "./components/layout/AuthLayout.tsx";
 
-import { LandingPage } from "./components/Landing-Page/LandingPage";
-import { SignUp } from "./components/Auth-Section/SignUp.tsx";
-import { LogIn } from "./components/Auth-Section/LogIn.tsx";
-import { Dashboard } from "./components/Dashboard-section/Dashboard.tsx";
-import { PracticeLibrary } from "./components/Practice-Library/PracticeLibrary.tsx";
-import { SessionHistory } from "./components/Session-History/SessionHistory.tsx";
-import { Settings } from "./components/Settings/Settings.tsx";
-import { PageNotFound } from "./components/PageNotFound.tsx";
-import { Onboarding } from "./components/Onboarding.tsx";
-import { Results } from "./components/Results.tsx";
-import { PracticeSessionPage } from "./components/PracticeSession.tsx";
+import { LandingPage } from "./pages/LandingPage.tsx";
+import { SignUp } from "./pages/SignUp.tsx";
+import { LogIn } from "./pages/LogIn.tsx";
+import { Dashboard } from "./pages/Dashboard.tsx";
+import { PracticeLibrary } from "./pages/PracticeLibrary.tsx";
+import { SessionHistory } from "./pages/SessionHistory.tsx";
+import { Settings } from "./pages/Settings.tsx";
+import { PageNotFound } from "./pages/PageNotFound.tsx";
+import { Onboarding } from "./pages/Onboarding.tsx";
+import { Results } from "./pages/Results.tsx";
+import { PracticeSessionPage } from "./pages/PracticeSession.tsx";
 
 function App() {
   return (

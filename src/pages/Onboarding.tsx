@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/Landing-Page/Logo";
-import { OnboardingSection } from "./OnboardingSection";
+import { Logo } from "@/components/Logo";
+import { OnboardingSection } from "../components/onboarding/OnboardingSection";
 
 const goals = [
     "Speaking confidently",

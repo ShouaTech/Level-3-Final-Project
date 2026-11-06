@@ -1,8 +1,6 @@
 import type { ReactNode } from "react";
 import { AuthToggle } from "./AuthToggle";
 
-// The card on the Log In and Sign Up pages: the toggle at the top, then
-// whatever form the page passes in as children.
 type AuthCardType = {
   children: ReactNode;
 };

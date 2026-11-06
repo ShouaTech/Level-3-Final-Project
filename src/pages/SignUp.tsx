@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FormField } from "../FormField";
-import { AuthCard } from "./AuthCard";
+import { FormField } from "../components/FormField";
+import { AuthCard } from "../components/auth/AuthCard";
 
 const perks = [
   "Free to start — no credit card required",
@@ -24,8 +24,6 @@ export function SignUp() {
       </div>
 
       <AuthCard>
-        {/* Real sign-up comes with Supabase Auth. Until then, stop the browser
-            from reloading the page when the form is submitted. */}
         <form className="space-y-5" onSubmit={(e) => {
           e.preventDefault();
           navigate("/onboarding");

@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
-import { Logo } from "./Logo";
+import { Logo } from "../Logo";
 
 export function LandingHeader() {
   return (

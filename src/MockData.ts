@@ -1,4 +1,6 @@
-import type { UserProfile, PracticeSession, UserPerformance, Exercise } from "./Types";
+import type { UserProfile, UserPerformance } from "./types/user.types";
+import type { PracticeSession } from "./types/session.types";
+import type { Exercise } from "./types/exercise.types";
 
 export const mockUser: UserProfile = {
   name: "Benny",
@@ -90,10 +92,6 @@ export const mockExercises: Exercise[] = [
   },
 ];
 
-// Oldest first. Each session's practiceType is the title of an exercise above.
-// The numbers are consistent with the transcript: fillerWordCount counts
-// um, uh, like, you know, basically and actually, and speakingPace is the
-// transcript's word count divided by the duration in minutes.
 export const mockSessions: PracticeSession[] = [
   {
     id: "s1",

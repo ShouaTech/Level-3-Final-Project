@@ -1,10 +1,3 @@
-export type UserProfile = {
-    name: string,
-    email: string,
-    communicationGoals: string[],
-    selfReportedWeaknesses: string[]
-}
-
 export type PracticeSession = {
     id: string,
     practiceType: string,
@@ -20,19 +13,4 @@ export type PracticeSession = {
         toImprove: string[],
         recommendedFocus: string
     }
-}
-
-export type UserPerformance = {
-    strengths: string[],
-    weaknesses: string[],
-    recommendedPractice: string
-}
-
-export type Exercise = {
-    id: string,
-    title: string,
-    description: string,
-    duration: string,
-    difficulty: string,
-    prompt: string
 }

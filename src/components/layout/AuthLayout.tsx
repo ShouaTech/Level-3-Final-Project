@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router";
-import { Logo } from "@/components/Landing-Page/Logo";
+import { Logo } from "@/components/Logo";
 
 // Shared frame for the public auth pages (Log In, Sign Up): logo, background
 // glow, and a centered column where the matched page renders.

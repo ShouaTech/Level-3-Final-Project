@@ -1,4 +1,4 @@
-import { OptionChip } from "./OptionChip";
+import { OptionChip } from "../OptionChip";
 
 
 const gridColumns = {

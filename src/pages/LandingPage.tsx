@@ -1,9 +1,9 @@
-import { LandingHeader } from "./LandingHeader";
-import { HeroSection } from "./HeroSection";
-import { HowItWorks } from "./HowItWorks";
-import { PracticePreview } from "./PracticePreview";
-import { CallToAction } from "./CallToAction";
-import { LandingFooter } from "./LandingFooter";
+import { LandingHeader } from "../components/landing/LandingHeader";
+import { HeroSection } from "../components/landing/HeroSection";
+import { HowItWorks } from "../components/landing/HowItWorks";
+import { PracticePreview } from "../components/landing/PracticePreview";
+import { CallToAction } from "../components/landing/CallToAction";
+import { LandingFooter } from "../components/landing/LandingFooter";
 
 export function LandingPage() {
   return (

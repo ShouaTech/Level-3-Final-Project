@@ -4,26 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/Logo";
 import { OnboardingSection } from "../components/onboarding/OnboardingSection";
-
-const goals = [
-    "Speaking confidently",
-    "Small talk",
-    "Storytelling",
-    "Speaking clearly",
-    "Reducing filler words",
-    "Public speaking",
-    "Explaining ideas",
-    "Follow-up questions"
-];
-
-const weaknesses = [
-    "Speaking too quickly",
-    "Using filler words",
-    "Long pauses",
-    "Losing my train of thought",
-    "Mumbling or speaking unclearly",
-    "Starting conversations",
-]
+import { goalOptions, weaknessOptions } from "../data/profileOptions";
 
 export function Onboarding() {
     const [selectedGoal, setSelectedGoal] = useState<string[]>([]);
@@ -46,12 +27,10 @@ export function Onboarding() {
         }
     }
 
-    // Worked out from the state on every render, so they can't fall out of sync.
     const totalSelected = selectedGoal.length + selectedWeakness.length;
     const canContinue = selectedGoal.length > 0;
 
     function buildPlan() {
-        // Saving the selections to the user's profile comes with the backend.
         navigate("/dashboard");
     }
 
@@ -86,7 +65,7 @@ export function Onboarding() {
                     <OnboardingSection
                         label="Your goals"
                         title="What do you want to improve?"
-                        options={goals}
+                        options={goalOptions}
                         selected={selectedGoal}
                         onToggle={toggleGoal}
                         columns={4}
@@ -94,7 +73,7 @@ export function Onboarding() {
                     <OnboardingSection
                         label="Your challenges"
                         title="What are your weaknesses?"
-                        options={weaknesses}
+                        options={weaknessOptions}
                         selected={selectedWeakness}
                         onToggle={toggleWeakness}
                         columns={3}

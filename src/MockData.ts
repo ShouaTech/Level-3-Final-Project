@@ -5,8 +5,8 @@ import type { Exercise } from "./types/exercise.types";
 export const mockUser: UserProfile = {
   name: "Benny",
   email: "yoyohoho@hotmail.com",
-  communicationGoals: ["Speak Clearly", "Gain Confidence"],
-  selfReportedWeaknesses: ["Mumbling", "Stuttering", "Quiet"],
+  communicationGoals: ["Speaking clearly", "Speaking confidently"],
+  selfReportedWeaknesses: ["Using filler words", "Mumbling or speaking unclearly"],
 };
 
 export const mockExercises: Exercise[] = [
